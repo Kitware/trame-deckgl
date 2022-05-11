@@ -1,0 +1,2 @@
+recursive-include trame_deckgl/module/serve *.min.js *.css
+include trame_deckgl/LICENSE
