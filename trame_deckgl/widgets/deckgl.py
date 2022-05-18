@@ -49,3 +49,8 @@ class Deck(AbstractElement):
         Serialize plotly figure
         """
         return json.loads(deck.to_json())
+
+
+__all__ = [
+    "Deck",
+]
