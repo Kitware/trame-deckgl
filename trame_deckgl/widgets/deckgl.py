@@ -5,16 +5,16 @@ from trame_deckgl import module
 
 class Deck(AbstractElement):
     _next_id = 0
-    """
-    Create a Deck element to show your layers
-
-    :param deck: (Optional) Instance to your Pydeck object
-    :param mapbox_api_key: API key for mapbox if using mapbox
-    :param tooltip:
-    :param custom_libraries:
-    """
 
     def __init__(self, deck=None, **kwargs):
+        """
+        Create a Deck element to show your layers
+
+        :param deck: (Optional) Instance to your Pydeck object
+        :param mapbox_api_key: API key for mapbox if using mapbox
+        :param tooltip:
+        :param custom_libraries:
+        """
         super().__init__("trame-deck", **kwargs)
         if self.server:
             self.server.enable_module(module)
