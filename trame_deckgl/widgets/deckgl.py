@@ -6,7 +6,12 @@ from trame_deckgl import module
 class Deck(AbstractElement):
     _next_id = 0
     """
-    Create a Deck element
+    Create a Deck element to show your layers
+
+    :param deck: (Optional) Instance to your Pydeck object
+    :param mapbox_api_key: API key for mapbox if using mapbox
+    :param tooltip:
+    :param custom_libraries:
     """
 
     def __init__(self, deck=None, **kwargs):
@@ -25,10 +30,16 @@ class Deck(AbstractElement):
             ("mapbox_api_key", "mapboxApiKey"),
             "tooltip",
             "customLibraries",
+            ("custom_libraries", "customLibraries"),
         ]
         self.update()
 
     def update(self, deck=None, **kwargs):
+        """
+        Update the PyDeck to show.
+
+        :param deck: new PyDeck object to use
+        """
         if deck:
             self._deck = deck
 
@@ -37,16 +48,18 @@ class Deck(AbstractElement):
 
     @property
     def key(self):
+        """Return the name of the state variable used internally"""
         return self._key
 
     @property
     def deck(self):
+        """Return the current PyDeck object bound to this widget"""
         return self._deck
 
     @staticmethod
     def to_data(deck, **kwargs):
         """
-        Serialize plotly figure
+        Serialize PyDeck figure so it can be exchanged with the client
         """
         return json.loads(deck.to_json())
 
