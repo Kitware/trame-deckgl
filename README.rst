@@ -1,6 +1,10 @@
 High-scale spatial rendering for trame
 ===========================================================================
 
+.. image:: https://github.com/Kitware/trame-deckgl/actions/workflows/test_and_release.yml/badge.svg
+    :target: https://github.com/Kitware/trame-deckgl/actions/workflows/test_and_release.yml
+    :alt: Test and Release
+
 trame-deckgl extend trame **widgets** with components that can interface with PyDeck while being powered by Deck.gl.
 Deck integration in trame allow you to create rich visualization by leveraging `PyDeck <https://pydeck.gl/index.html>`_ (`Apache License <https://github.com/visgl/deck.gl/blob/master/bindings/pydeck/LICENSE.txt>`_).
 
