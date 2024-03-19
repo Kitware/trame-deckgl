@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v2.0.3 (2024-03-19)
+
+### Fix
+
+* **vue3:** Add support for vue3 ([`d176386`](https://github.com/Kitware/trame-deckgl/commit/d1763867c44f192fc9b06b2f10dff889f6b23ceb))
+
 ## v2.0.2 (2023-02-23)
 ### Fix
 * **version:** Add __version__ ([`86a6d46`](https://github.com/Kitware/trame-deckgl/commit/86a6d465dffd2aeaf78198efd3df28e13dd4e76a))
