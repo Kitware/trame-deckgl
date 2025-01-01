@@ -1,4 +1,6 @@
-High-scale spatial rendering for trame
+.. |pypi_download| image:: https://img.shields.io/pypi/dm/trame-deckgl
+
+High-scale spatial rendering for trame |pypi_download|
 ===========================================================================
 
 .. image:: https://github.com/Kitware/trame-deckgl/actions/workflows/test_and_release.yml/badge.svg
