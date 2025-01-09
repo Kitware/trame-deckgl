@@ -75,3 +75,9 @@ The Deck component relies on the server for generating the map definition.
 
     widget = deckgl.Deck(mapboxApiKey=..., deck=deck)
     widget.update(deck2)
+
+
+JavaScript dependency
+-----------------------------------------------------------
+
+This Python package bundle the ``@deck.gl/jupyter-widget@8.4.7`` JavaScript library. If you would like us to upgrade it, `please reach out <https://www.kitware.com/trame/>`_.
