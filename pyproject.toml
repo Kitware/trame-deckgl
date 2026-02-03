@@ -1,6 +1,6 @@
 [project]
 name = "trame-deckgl"
-version = "2.0.3"
+version = "2.0.4"
 description = "Deck.gl widget for trame"
 authors = [
     {name = "Kitware Inc."},
