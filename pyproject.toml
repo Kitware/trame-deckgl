@@ -62,3 +62,13 @@ packages = [
 version_toml = [
     "pyproject.toml:project.version",
 ]
+build_command = """
+  python -m venv .venv
+  source .venv/bin/activate
+  pip install -U pip build
+  python -m build --sdist --wheel .
+"""
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*"]
+upload_to_vcs_release = true
