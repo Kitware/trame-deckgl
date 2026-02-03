@@ -1,0 +1,64 @@
+[project]
+name = "trame-deckgl"
+version = "2.0.3"
+description = "Deck.gl widget for trame"
+authors = [
+    {name = "Kitware Inc."},
+]
+dependencies = [
+    "trame-client",
+]
+requires-python = ">=3.9"
+readme = "README.rst"
+license = {text = "MIT"}
+keywords = [
+    "Python",
+    "Interactive",
+    "Web",
+    "Application",
+    "Framework",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: JavaScript",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "ruff",
+    "pytest",
+    "pytest-asyncio",
+    "trame-client[test]",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "/trame/**/*.py",
+    "/trame_deckgl/**/*.py",
+    "/trame_deckgl/module/serve/**/*.js",
+    "/trame_deckgl/module/serve/**/*.css",
+    "/trame_deckgl/LICENSE",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "trame",
+    "trame_deckgl",
+]
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:project.version",
+]
