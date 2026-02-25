@@ -8,7 +8,7 @@ High-scale spatial rendering for trame |pypi_download|
     :alt: Test and Release
 
 trame-deckgl extend trame **widgets** with components that can interface with PyDeck while being powered by Deck.gl.
-Deck integration in trame allow you to create rich visualization by leveraging `PyDeck <https://pydeck.gl/index.html>`_ (`Apache License <https://github.com/visgl/deck.gl/blob/master/bindings/pydeck/LICENSE.txt>`_).
+Deck integration in trame allow you to create rich visualization by leveraging `PyDeck <https://pydeck.gl>`_ (`Apache License <https://github.com/visgl/deck.gl/blob/master/bindings/pydeck/LICENSE.txt>`_).
 
 
 Installing
@@ -24,7 +24,7 @@ trame-deckgl can be installed with `pip <https://pypi.org/project/trame-deckgl/>
 Usage
 -----------------------------------------------------------
 
-The `Trame Tutorial <https://kitware.github.io/trame/docs/tutorial.html>`_ is the place to go to learn how to use the library and start building your own application.
+The `Trame Tutorial <https://kitware.github.io/trame/guide/tutorial>`_ is the place to go to learn how to use the library and start building your own application.
 
 The `API Reference <https://trame.readthedocs.io/en/latest/index.html>`_ documentation provides API-level documentation.
 
@@ -39,7 +39,7 @@ This license has been chosen to match the one use by `Deck.gl <https://github.co
 Community
 -----------------------------------------------------------
 
-`Trame <https://kitware.github.io/trame/>`_ | `Discussions <https://github.com/Kitware/trame/discussions>`_ | `Issues <https://github.com/Kitware/trame/issues>`_ | `RoadMap <https://github.com/Kitware/trame/projects/1>`_ | `Contact Us <https://www.kitware.com/contact-us/>`_
+`Trame <https://kitware.github.io/trame/>`_ | `Discussions <https://github.com/Kitware/trame/discussions>`_ | `Issues <https://github.com/Kitware/trame/issues>`_ | `Contact Us <https://www.kitware.com/contact-us/>`_
 
 .. image:: https://zenodo.org/badge/410108340.svg
     :target: https://zenodo.org/badge/latestdoi/410108340
