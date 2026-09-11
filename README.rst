@@ -1,4 +1,4 @@
-.. |pypi_download| image:: https://img.shields.io/pypi/dm/trame-deckgl
+.. |pypi_download| image:: https://kitware.github.io/trame/downloads/trame-deckgl.svg
 
 High-scale spatial rendering for trame |pypi_download|
 ===========================================================================
